@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout Code From Git') {
+            steps {
+                // Checkout code from Git repository
+                git 'https://github.com/your/repository.git'
+            }
+        }
+
+        stage('Run Test Automate') {
+            steps {
+                // Run your automated test script
+                sh 'python your_test_script.py'
+            }
+        }
+
+        stage('Send Result To Jenkins') {
+            steps {
+                // Example: Send test result report to Jenkins
+                junit '**/test-reports/*.xml'
+            }
+        }
+    }
+}

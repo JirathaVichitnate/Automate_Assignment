@@ -1,0 +1,5 @@
+Test Automation Assignment #1
+List of Number A: [1, 2, 3, 5, 6, 8, 9]
+List of Number B: [3, 2, 1, 5, 6, 0]
+Number of numbers which are duplicates: 5
+Duplicate items: [1, 2, 3, 5, 6]

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.9.6 on darwin)" generated="20240508 01:58:30.076" rpa="false" schemaversion="3">
+<suite id="s1" name="Automate Test Assignment 04" source="/Users/jiratha/Desktop/MyProject/Automate_Test_Assignment_04.robot">
+<kw name="Open Application" type="SETUP">
+<kw name="Open Application">
+<arg>${APP_PATH}</arg>
+<arg>platformName=${PLATFORM_NAME}</arg>
+<arg>platformVersion=${PLATFORM_VERSION}</arg>
+<arg>deviceName=${DEVICE_NAME}</arg>
+<arg>appPackage=${APP_PACKAGE}</arg>
+<arg>appActivity=${APP_ACTIVITY}</arg>
+<msg timestamp="20240508 01:58:30.192" level="FAIL">Keyword 'Open Application' expected 0 arguments, got 6.</msg>
+<status status="FAIL" starttime="20240508 01:58:30.192" endtime="20240508 01:58:30.192"/>
+</kw>
+<status status="FAIL" starttime="20240508 01:58:30.191" endtime="20240508 01:58:30.192"/>
+</kw>
+<test id="s1-t1" name="TaskManagementAndFiltering" line="16">
+<status status="FAIL" starttime="20240508 01:58:30.192" endtime="20240508 01:58:30.193">Parent suite setup failed:
+Keyword 'Open Application' expected 0 arguments, got 6.</status>
+</test>
+<kw name="Close Application" type="TEARDOWN">
+<msg timestamp="20240508 01:58:30.195" level="FAIL">No keyword with name 'Close Application' found.</msg>
+<status status="FAIL" starttime="20240508 01:58:30.195" endtime="20240508 01:58:30.195">No keyword with name 'Close Application' found.</status>
+</kw>
+<status status="FAIL" starttime="20240508 01:58:30.077" endtime="20240508 01:58:30.195">Suite setup failed:
+Keyword 'Open Application' expected 0 arguments, got 6.
+
+Also suite teardown failed:
+No keyword with name 'Close Application' found.</status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Automate Test Assignment 04">Automate Test Assignment 04</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20240508 01:58:30.150" level="ERROR">Error in file '/Users/jiratha/Desktop/MyProject/Automate_Test_Assignment_04.robot' on line 2: Importing library 'AppiumLibrary' failed: ModuleNotFoundError: No module named 'appium.webdriver.common.touch_action'
+Traceback (most recent call last):
+  File "/Users/jiratha/Library/Python/3.9/lib/python/site-packages/AppiumLibrary/__init__.py", line 4, in &lt;module&gt;
+    from AppiumLibrary.keywords import *
+  File "/Users/jiratha/Library/Python/3.9/lib/python/site-packages/AppiumLibrary/keywords/__init__.py", line 9, in &lt;module&gt;
+    from ._touch import _TouchKeywords
+  File "/Users/jiratha/Library/Python/3.9/lib/python/site-packages/AppiumLibrary/keywords/_touch.py", line 3, in &lt;module&gt;
+    from appium.webdriver.common.touch_action import TouchAction
+PYTHONPATH:
+  /Users/jiratha/Desktop/MyProject
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python39.zip
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload
+  /Users/jiratha/Library/Python/3.9/lib/python/site-packages
+  /Applications/Xcode.app/Contents/Developer/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/site-packages</msg>
+</errors>
+</robot>
